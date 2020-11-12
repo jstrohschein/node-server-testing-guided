@@ -27,7 +27,8 @@ describe('hobbits model', () => {
   })
 
   describe('insert()', () => {
-    
+    // use insert, assert hobbits.length is 1
+    // use insert, assert hobbits.length is 1
   })
 
   describe('update()', () => {
