@@ -38,8 +38,9 @@ describe('hobbits model', () => {
       expect(hobbits).toHaveLength(2)
     })
 
-    it('gives back the inserted hobbit', () => {
+    it('gives back the inserted hobbit', async () => {
       // 1- write the test which will fail
+      await Hobbit.insert({ name: "Sam" })
     })
   })
 
