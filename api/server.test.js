@@ -7,4 +7,8 @@ describe('server.js module', () => {
     expect(process.env.DB_ENV).not.toBe('production')
     expect(process.env.DB_ENV).toBe('testing')
   })
+
+  describe('[GET] /', () => {
+    
+  })
 })
