@@ -50,7 +50,8 @@ describe('hobbits model', () => {
   describe('update()', () => {
     it('can insert', async () => {
       await db('hobbits').insert({ name: "Gaffer" })
-      const sam = 
+      const sam = await Hobbit.update(1, { name: "Sam" })
+      expect(sam).toMatchObject({ id: 1, name: "Sam"})
     })
   })
 
