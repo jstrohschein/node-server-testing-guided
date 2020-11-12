@@ -10,7 +10,7 @@ describe('hobbits model', () => {
   describe('getAll()', () => {
     it('gets an empty array', async () => {
       const hobbits = await Hobbit.getAll()
-      // assertion
+      expect(hobbits).toBe([])
     })
   })
 
