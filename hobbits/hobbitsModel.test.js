@@ -8,7 +8,7 @@ beforeEach(async () => {
 
 describe('hobbits model', () => {
   describe('getAll()', () => {
-
+    
   })
 
   describe('insert()', () => {
