@@ -41,6 +41,7 @@ describe('hobbits model', () => {
     it('gives back the inserted hobbit', async () => {
       // 1- write the test which will fail
       await Hobbit.insert({ name: "Sam" })
+      const sam = await db('hobbits').where({ id: 1}).fir
     })
   })
 
