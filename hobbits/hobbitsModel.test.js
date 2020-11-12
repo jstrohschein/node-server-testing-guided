@@ -53,6 +53,7 @@ describe('hobbits model', () => {
       let sam = await Hobbit.update(1, { name: "Sam" })
       expect(sam).toMatchObject({ id: 1, name: "Sam" })
       sam = await db('hobbits').where({ id: 1 }).first()
+      expect(sam.name).toBe("Sam")
     })
   })
 
