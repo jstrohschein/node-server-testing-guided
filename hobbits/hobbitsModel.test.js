@@ -43,7 +43,7 @@ describe('hobbits model', () => {
       const sam = await Hobbit.insert({ name: "Sam" })
       expect(sam).toMatchObject({ id: 1, name: 'Sam' })
       const gaffer = await Hobbit.insert({ name: "Gaffer" })
-      expect(gaffer).toMatchObject({ id: 1, name: 'Gaffer' })
+      expect(gaffer).toMatchObject({ id: 2, name: 'Gaffer' })
     })
   })
 
