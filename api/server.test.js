@@ -19,6 +19,7 @@ describe('server.js module', () => {
     it('works also using jest syntax', async () => {
       const res = await request(server).get('/')
       expect(res.status).toBe(200)
+      expect(res.body).toMatchObject({ api: "down" })
     })
   })
 })
