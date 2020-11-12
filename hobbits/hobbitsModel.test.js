@@ -12,6 +12,7 @@ describe('hobbits model', () => {
       const hobbits = await Hobbit.getAll()
       expect(hobbits).toHaveLength(0)
     })
+    it('')
   })
 
   describe('insert()', () => {
