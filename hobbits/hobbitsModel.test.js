@@ -16,7 +16,7 @@ describe('hobbits model', () => {
       // make an insert { name: "Sam" } use db('hobbits')
       // check that the helper returns array with length 1
 
-      // make an insert { name: "Gaffer" }
+      // make an insert { name: "Gaffer" } use db('hobbits')
       // check that the helper returns array with length 2
     })
   })
