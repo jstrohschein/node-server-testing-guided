@@ -48,7 +48,10 @@ describe('hobbits model', () => {
   })
 
   describe('update()', () => {
-    
+    it('can insert', async () => {
+      await db('hobbits').insert({ name: "Gaffer" })
+      const sam = 
+    })
   })
 
   describe('remove()', () => {
