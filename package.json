@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "start": "node index.js",
-    "test": "jest --watch --verbose"
+    "test": "DB_CONFIG=testing jest --watch --verbose"
   },
   "keywords": [],
   "author": "Lambda School",
