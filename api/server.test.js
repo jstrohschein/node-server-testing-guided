@@ -11,7 +11,8 @@ describe('server.js module', () => {
   describe('[GET] /', () => {
     it('works', () => {
       return request(server).get('/')
-        .expect('Content-Type', /text/)
+        .expect('Content-Type', /json/)
+        .expect('Content-Length', '12')
     })
   })
 })
