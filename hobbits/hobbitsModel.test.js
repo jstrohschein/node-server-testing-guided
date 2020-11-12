@@ -50,8 +50,9 @@ describe('hobbits model', () => {
   describe('update()', () => {
     it('can insert', async () => {
       await db('hobbits').insert({ name: "Gaffer" })
-      const sam = await Hobbit.update(1, { name: "Sam" })
-      expect(sam).toMatchObject({ id: 1, name: "Sam"})
+      let sam = await Hobbit.update(1, { name: "Sam" })
+      expect(sam).toMatchObject({ id: 1, name: "Sam" })
+      sam = await db('hobbits').where({ id: 1 }).first()
     })
   })
 
