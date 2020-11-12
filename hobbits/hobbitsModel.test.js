@@ -62,11 +62,19 @@ describe('hobbits model', () => {
   })
 
   describe('remove()', () => {
-    it('can remove', async () => {
+    it('can remove', () => {
       // await db('hobbits').insert({ name: "Sam" })
       // await Hobbit.remove(1)
       // let hobbits = await db('hobbits')
       // expect(hobbits).toHaveLength(0)
+
+      db('hobbits').insert({ name: "Sam" })
+        .then(stuff => {
+          return Hobbit.remove(1)
+        })
+        .then(stuff => {
+          return db('hobbits')
+        })
     })
   })
 })
