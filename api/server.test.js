@@ -17,7 +17,7 @@ describe('server.js module', () => {
     })
 
     it('works also using jest syntax', async () => {
-      const res = await request(server).get('/')
+      const res = await request(server).get('/?foo=bar')
       expect(res.status).toBe(200)
       expect(res.body).toMatchObject({ api: "up" })
       expect(res.type).toMatch(/json/)
