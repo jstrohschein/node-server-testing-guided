@@ -21,6 +21,7 @@ describe('server.js module', () => {
       expect(res.status).toBe(200)
       expect(res.body).toMatchObject({ api: "up" })
       expect(res.type).toMatch(/json/)
+      
     })
   })
 })
