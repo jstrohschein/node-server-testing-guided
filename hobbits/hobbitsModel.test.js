@@ -65,7 +65,7 @@ describe('hobbits model', () => {
     it('can remove', async () => {
       await db('hobbits').insert({ name: "Sam" })
       await Hobbit.remove(1)
-      let hobbits = db('hobbits')
+      let hobbits = await db('hobbits')
       expect(hobbits).toHaveLength(0)
     })
   })
