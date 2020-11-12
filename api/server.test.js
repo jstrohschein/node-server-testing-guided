@@ -10,7 +10,7 @@ describe('server.js module', () => {
 
   describe('[GET] /', () => {
     it('works', () => {
-      
+      return request(server).get()
     })
   })
 })
