@@ -48,7 +48,7 @@ describe('hobbits model', () => {
   })
 
   describe('update()', () => {
-
+    
   })
 
   describe('remove()', () => {
