@@ -27,15 +27,18 @@ describe('hobbits model', () => {
   })
 
   describe('insert()', () => {
-    // use insert, assert hobbits.length is 1
-    // use insert, assert hobbits.length is 1
+    it('can insert hobbits', async () => {
+      // use insert, assert hobbits.length is 1
+      await Hobbit.insert
+      // use insert, assert hobbits.length is 2
+    })
   })
 
   describe('update()', () => {
-    
+
   })
 
   describe('remove()', () => {
-    
+
   })
 })
