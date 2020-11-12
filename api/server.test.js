@@ -9,6 +9,8 @@ describe('server.js module', () => {
   })
 
   describe('[GET] /', () => {
-    
+    it('works', () => {
+      
+    })
   })
 })
