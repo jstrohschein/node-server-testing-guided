@@ -18,7 +18,7 @@ describe('server.js module', () => {
 
     it('works also using jest syntax', async () => {
       const res = await request(server).get('/')
-      console.log(res)
+      expect(res.status).toBe(200)
     })
   })
 })
