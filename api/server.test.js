@@ -15,5 +15,9 @@ describe('server.js module', () => {
         .expect('Content-Length', '12')
         .expect({ api: "up" })
     })
+
+    it('works also using jest syntax', () => {
+      
+    })
   })
 })
