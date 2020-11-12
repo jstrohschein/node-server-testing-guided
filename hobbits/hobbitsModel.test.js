@@ -20,6 +20,9 @@ describe('hobbits model', () => {
       expect(hobbits).toHaveLength(1)
       // make an insert { name: "Gaffer" } use db('hobbits')
       // check that the helper returns array with length 2
+      await db('hobbits').insert({ name: "Gaffer" })
+      hobbits = await Hobbit.getAll()
+      expect(hobbits).toHaveLength(2)
     })
   })
 
