@@ -8,8 +8,8 @@ beforeEach(async () => {
 
 describe('hobbits model', () => {
   describe('getAll()', () => {
-    it('gets an empty array', () => {
-      
+    it('gets an empty array', async () => {
+      const hobbits = await Hobbit.getAll()
     })
   })
 
