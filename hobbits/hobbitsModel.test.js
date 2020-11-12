@@ -49,9 +49,13 @@ describe('hobbits model', () => {
 
   describe('update()', () => {
     it('can insert', async () => {
+      // make an insert using just knex
       await db('hobbits').insert({ name: "Gaffer" })
+      // make the update
       let sam = await Hobbit.update(1, { name: "Sam" })
+      // assert we get back the updated thing
       expect(sam).toMatchObject({ id: 1, name: "Sam" })
+      // further test that the thing got updated in the db
       sam = await db('hobbits').where({ id: 1 }).first()
       expect(sam.name).toBe("Sam")
     })
