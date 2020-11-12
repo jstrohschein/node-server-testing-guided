@@ -15,7 +15,7 @@ describe('hobbits model', () => {
     it('gets all the hobbits', () => {
       // make an insert { name: "Sam" } use db('hobbits')
       // check that the helper returns array with length 1
-
+      db('hobbits').insert({ name: "Sam" })
       // make an insert { name: "Gaffer" } use db('hobbits')
       // check that the helper returns array with length 2
     })
