@@ -41,7 +41,7 @@ describe('hobbits model', () => {
     it('gives back the inserted hobbit', async () => {
       // 1- write the test which will fail
       const sam = await Hobbit.insert({ name: "Sam" })
-      expect(sam).to
+      expect(sam).toMatchObject({ id: 1, name: 'Sam' })
     })
   })
 
