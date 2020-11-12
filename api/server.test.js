@@ -13,6 +13,8 @@ describe('server.js module', () => {
       return request(server).get('/')
         .expect('Content-Type', /json/)
         .expect('Content-Length', '12')
+        .expect({ api: "up" })
+        .
     })
   })
 })
