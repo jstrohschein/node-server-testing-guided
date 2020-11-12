@@ -13,7 +13,7 @@ describe('hobbits model', () => {
       expect(hobbits).toHaveLength(0)
     })
     it('gets all the hobbits', () => {
-      // make an insert { name: "Sam" }
+      // make an insert { name: "Sam" } use db('hobbits')
       // check that the helper returns array with length 1
 
       // make an insert { name: "Gaffer" }
