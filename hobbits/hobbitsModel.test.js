@@ -33,6 +33,9 @@ describe('hobbits model', () => {
       let hobbits = await db('hobbits')
       expect(hobbits).toHaveLength(1)
       // use insert, assert hobbits.length is 2
+      await Hobbit.insert({ name: "Gaffer" })
+      hobbits = await db('hobbits')
+      expect(hobbits).toHaveLength(2)
     })
   })
 
