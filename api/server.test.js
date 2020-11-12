@@ -16,8 +16,9 @@ describe('server.js module', () => {
         .expect({ api: "up" })
     })
 
-    it('works also using jest syntax', () => {
-      
+    it('works also using jest syntax', async () => {
+      const res = await request(server).get('/')
+      console.log(res)
     })
   })
 })
