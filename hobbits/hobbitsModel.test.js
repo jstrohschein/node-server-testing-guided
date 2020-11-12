@@ -15,8 +15,9 @@ describe('hobbits model', () => {
     it('gets all the hobbits', async () => {
       // make an insert { name: "Sam" } use db('hobbits')
       // check that the helper returns array with length 1
-      db('hobbits').insert({ name: "Sam" })
+      await db('hobbits').insert({ name: "Sam" })
       let hobbits = await Hobbit.getAll()
+      expect(hobbits).toHaveLength(1)
       // make an insert { name: "Gaffer" } use db('hobbits')
       // check that the helper returns array with length 2
     })
