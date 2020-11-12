@@ -75,6 +75,9 @@ describe('hobbits model', () => {
         .then(stuff => {
           return db('hobbits')
         })
+        .then(hobbits => {
+          expect(hobbits).toHaveLength(0)
+        })
     })
   })
 })
