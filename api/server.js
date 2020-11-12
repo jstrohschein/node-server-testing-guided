@@ -10,8 +10,8 @@ server.get("/", (req, res) => {
   res.status(200).json({ api: "up" });
 });
 
-server.get("/hobbits", (req, res) => {
-  Hobbits.getAll()
+server.get("/hobbits", (req, res) => { // endpoint with supertest
+  Hobbits.getAll() // db helpers jest
     .then(hobbits => {
       res.status(200).json(hobbits);
     })
