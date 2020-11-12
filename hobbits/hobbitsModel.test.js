@@ -12,7 +12,10 @@ describe('hobbits model', () => {
       const hobbits = await Hobbit.getAll()
       expect(hobbits).toHaveLength(0)
     })
-    it('')
+    it('gets all the hobbits', () => {
+      // make an insert { name: "Sam" }
+      // check that the helper returns array with length 1
+    })
   })
 
   describe('insert()', () => {
