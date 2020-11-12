@@ -37,6 +37,10 @@ describe('hobbits model', () => {
       hobbits = await db('hobbits')
       expect(hobbits).toHaveLength(2)
     })
+
+    it('gives back the inserted hobbit', () => {
+      // 1- write the test which will fail
+    })
   })
 
   describe('update()', () => {
