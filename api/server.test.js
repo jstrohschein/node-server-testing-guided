@@ -14,7 +14,6 @@ describe('server.js module', () => {
         .expect('Content-Type', /json/)
         .expect('Content-Length', '12')
         .expect({ api: "up" })
-        .
     })
   })
 })
