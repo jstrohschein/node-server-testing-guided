@@ -8,7 +8,9 @@ beforeEach(async () => {
 
 describe('hobbits model', () => {
   describe('getAll()', () => {
-    
+    it('gets an empty array', () => {
+      
+    })
   })
 
   describe('insert()', () => {
