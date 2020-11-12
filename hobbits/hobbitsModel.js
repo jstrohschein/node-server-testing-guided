@@ -20,7 +20,7 @@ async function update(id, changes) {
 }
 
 function remove(id) {
-  return db('hobbits').;
+  return db('hobbits').where({ id }).delete()
 }
 
 function getAll() {
